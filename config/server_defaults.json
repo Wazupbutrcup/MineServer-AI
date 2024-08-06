@@ -1,0 +1,7 @@
+{
+    "server_name": "My Minecraft Server",
+    "max_players": 20,
+    "gamemode": "survival",
+    "difficulty": "easy",
+    "level_seed": "mycustomseed"
+}
