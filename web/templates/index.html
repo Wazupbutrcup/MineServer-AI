@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineServerAI Setup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>MineServerAI Setup</h1>
+    <form action="{{ url_for('setup') }}" method="post">
+        <label for="server_name">Server Name:</label>
+        <input type="text" id="server_name" name="server_name" required><br><br>
+        
+        <label for="max_players">Max Players:</label>
+        <input type="number" id="max_players" name="max_players" required><br><br>
+        
+        <label for="gamemode">Gamemode:</label>
+        <select id="gamemode" name="gamemode" required>
+            <option value="survival">Survival</option>
+            <option value="creative">Creative</option>
+        </select><br><br>
+        
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty" name="difficulty" required>
+            <option value="peaceful">Peaceful</option>
+            <option value="easy">Easy</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Hard</option>
+        </select><br><br>
+        
+        <label for="level_seed">Level Seed:</label>
+        <input type="text" id="level_seed" name="level_seed"><br><br>
+        
+        <button type="submit">Setup Server</button>
+    </form>
+</body>
+</html>
