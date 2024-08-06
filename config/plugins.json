@@ -1,0 +1,12 @@
+{
+    "plugins": [
+        {
+            "name": "EssentialsX",
+            "url": "https://api.spigotmc.org/legacy/update.php?resource=9089"
+        },
+        {
+            "name": "LuckPerms",
+            "url": "https://api.spigotmc.org/legacy/update.php?resource=28140"
+        }
+    ]
+}
